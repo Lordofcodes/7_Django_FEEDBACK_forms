@@ -8,14 +8,13 @@
     <title>Document</title>
 </head>
 <body>
+
 <form action="/" method="POST">
     {% comment %}NO NEED TO DEFINE THAT METHOD , default is get{% endcomment %}
     {% csrf_token %}
-    <label> YOUR NAME </label>
-    <input id="username" name="username" type="text">
-    <button>Send</button>
+    {{ form }}
+    <button type="submit">Send</button>
 </form>
 
-</form>
 </body>
 </html>
